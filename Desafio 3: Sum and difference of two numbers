@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int primeiro, segundo=0;
+    float um, dois =0;
+    
+    scanf("%d",&primeiro);
+    scanf("%d", &segundo);
+    scanf("%f", &um);
+    scanf("%f",&dois);
+    float intervalo=primeiro-segundo;
+    primeiro=primeiro+segundo;
+    segundo= intervalo;
+    intervalo= um-dois;
+    um=um+dois;
+    dois=intervalo;
+    
+    printf("%d %d \n", primeiro,segundo);
+    printf("%.1f %.1f", um, dois);
+    return 0;
+}
